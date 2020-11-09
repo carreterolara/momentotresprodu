@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+</style>
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+</style>
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+}
+
+.grid-cont{
+	display: grid;
+
+	grid-template-areas: 
+	"header"
+	"modelos"
+	"formulario"
+	"sitio";
+}
+
+@media (min-width: 300px){
+	.grid-cont{
+		grid-template:
+		"header"		150px
+		"modelos"		634px
+		"formulario"	490px
+		"sitio"			60px/
+		490px;
+	}
+
+	.header{
+	grid-area: header;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	background-color: #483D54;
+	}
+
+	.header img{
+	float: none;
+	margin-top: 3%;
+	width: 15%;
+	}
+
+	.modelos{
+	grid-area: modelos;
+	background-color: #7E6B92;
+	}
+
+	#mod1{
+		width: 100%;
+		height: auto;
+	}
+
+	.formulario{
+	grid-area: formulario;
+	width: 90%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 5px;
+	margin-left: 18px;
+	border-radius: 15px;
+	}
+
+	.formulario h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-weight: bold;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	color: #483D54;
+	font-size: 30px;
+	}
+
+	.formulario img{
+	width: 30%;
+	margin-left: 7px;
+	margin-top: 10px;
+	}
+
+	.ingresa{
+	width: 50%;
+	background-color: white;
+	padding: 12px;
+	border-radius: 5px;
+	margin: 11px;
+	border: 1px solid #483D54;
+	color: #483D54;
+	}
+
+	.boton{
+	width: 40%;
+	min-width: 110px;
+	background-color: #483D54;
+	border: none;
+	border-radius: 10px;
+	padding: 11px;
+	color: white;
+	margin-top: 35px;
+	align-content: center;
+	font-size: 0.8em;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	}
+
+	.boton:hover{
+	transition: all 0.3s ease;
+	background-color: #29A5AB;
+	}
+
+	.sitio{
+	grid-area: sitio;
+	color: white;
+	font-weight: bold;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 0.6em;
+	padding-top: 19px;
+	text-align: center;
+	background-color: #483D54;
+	text-decoration: none;
+	}
+
+	.sitio:hover{
+	color: #BEAED1;
+	}
+}
+
+@media (min-width:  600px){
+	.grid-cont{
+		grid-template:
+		"header		header"			70px
+		"modelos	formulario"		auto
+		"sitio		sitio"			55px/
+		600px		1fr;
+	}
+
+	.header{
+	grid-area: header;
+	color: white;
+	font-size: 1.4rem;
+	text-align: center;
+	background-color: #483D54;
+	}
+
+	.header img{
+	float: left;
+	margin-left: 7%;
+	margin-top: 0.8%;
+	width: 6.6%;
+	}
+
+	.modelos{
+	grid-area: modelos;
+	background-color: #7E6B92;
+	}
+
+	#mod1{
+		width: auto;
+		height: 100%;
+	}
+
+
+	.formulario{
+	grid-area: formulario;
+	width: 90%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 5px;
+	margin-left: 18px;
+	border-radius: 15px;
+	}
+
+	.formulario h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-weight: bold;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	color: #483D54;
+	font-size: 22px;
+	}
+
+	.formulario img{
+	width: 80%;
+	margin-left: 7px;
+	margin-top: 46%;
+	}
+
+	.ingresa{
+	width: 69%;
+	background-color: white;
+	padding: 12px;
+	border-radius: 5px;
+	margin: 11px;
+	border: 1px solid #483D54;
+	color: #483D54;
+	}
+
+	.boton{
+	width: 40%;
+	min-width: 110px;
+	background-color: #483D54;
+	border: none;
+	border-radius: 10px;
+	padding: 11px;
+	color: white;
+	margin-top: 35px;
+	align-content: center;
+	font-size: 0.8em;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	}
+
+	.boton:hover{
+	transition: all 0.3s ease;
+	background-color: #29A5AB;
+	}
+
+	.sitio{
+	grid-area: sitio;
+	color: white;
+	font-weight: bold;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 0.8em;
+	padding-top: 19px;
+	text-align: center;
+	background-color: #483D54;
+	text-decoration: none;
+	}
+
+	.sitio:hover{
+	color: #BEAED1;
+	}
+}
+
+@media (min-width: 900px) {
+	.grid-cont{
+		grid-template:
+		"header		header"			85px
+		"modelos	formulario"		auto
+		"sitio		sitio"			60px/
+		590px		1fr;
+	}
+
+	.header{
+	grid-area: header;
+	color: white;
+	font-size: 1.8rem;
+	text-align: center;
+	background-color: #483D54;
+	}
+
+	.header img{
+	float: left;
+	margin-left: 7%;
+	margin-top: 0.5%;
+	width: 4.5%;
+	}
+
+	.modelos{
+	grid-area: modelos;
+	background-color: #7E6B92;
+	}
+
+	#mod1{
+		height: 100%;
+	}
+
+	.formulario{
+	grid-area: formulario;
+	width: 90%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 5px;
+	margin-left: 26px;
+	border-radius: 15px;
+	}
+
+	.formulario h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-weight: bold;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	color: #483D54;
+	font-size: 30px;
+	}
+
+	.formulario img{
+	width: 25%;
+	margin-left: 7px;
+	margin-top: 50px;
+	}
+
+	.ingresa{
+	width: 72%;
+	background-color: white;
+	padding: 12px;
+	border-radius: 5px;
+	margin: 11px;
+	border: 1px solid #483D54;
+	color: #483D54;
+	}
+
+	.boton{
+	width: 40%;
+	min-width: 110px;
+	background-color: #483D54;
+	border: none;
+	border-radius: 10px;
+	padding: 11px;
+	color: white;
+	margin-top: 35px;
+	align-content: center;
+	font-size: 0.8em;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	}
+
+	.boton:hover{
+	transition: all 0.3s ease;
+	background-color: #29A5AB;
+	}
+
+	.sitio{
+	grid-area: sitio;
+	color: white;
+	font-weight: bold;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1em;
+	padding-top: 19px;
+	text-align: center;
+	background-color: #483D54;
+	text-decoration: none;
+	}
+
+	.sitio:hover{
+	color: #BEAED1;
+	}
+
+}
+
+
