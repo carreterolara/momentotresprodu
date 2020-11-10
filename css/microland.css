@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+</style>
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+</style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+</style>
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-family: 1rem;
+	min-height: 100%;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-areas: 
+	"microhead"
+	"micropaletla"
+	"microtiposla"
+	"microscreensla"
+	"microfooterla";
+}
+
+@media (min-width: 300px) {
+
+	.grid-container{
+		grid-row-gap: 8px;
+		grid-template:
+		"microhead"				50px
+		"micropaletla"			490px
+		"microtiposla"			500px
+		"microscreensla"		540px
+		"microfooterla"			30px/
+		1fr;
+	}
+
+	.microhead{
+		grid-area: microhead;
+		background-color: #483D54;
+	}
+
+	.microhead img{
+		float: left;
+		margin-left: 46%;
+		margin-top: 1%;
+		width: 8%;
+	}
+
+	.micropaletla{
+		grid-area: micropaletla;
+		background-color: #F0E0EC;
+	}
+
+	.micropaletla h5{
+	font-weight: bold;
+	margin-top: 8%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	}
+
+	#pal{
+		height: 80%;
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	.microtiposla{
+		font-weight: bold;
+		grid-area: microtiposla;
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.8rem;
+		padding-left: 7%;
+		background-color: #F0E0EC;
+		color: black; 
+	}
+
+	.microtiposla h1{
+	font-weight: bold;
+	margin-top: 8%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	padding-right: 7%;
+	}
+
+	.microtiposla h2{
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.2rem;
+		text-align: center;
+		color: #483D54;
+	}
+
+	.microtiposla h3{
+		font-weight: bold;
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 1.2rem;
+		text-align: center;
+		color: #483D54;
+	}
+
+	.microscreensla{
+		grid-area: microscreensla;
+		background-color: #F0E0EC;
+	}
+
+	.microscreensla h4{
+	font-weight: bold;
+	margin-top: 8%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+
+	}
+
+	#galerialand{
+	padding-left: 8%;
+	width: 100%;
+	align-content: center;
+	}
+
+	.microfooterla{
+	grid-area: microfooterla;
+	color: white;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.7em;
+	padding-top: 10px;
+	text-align: center;
+	background-color: #483D54;
+	text-decoration: none;
+	}
+
+	.microfooterla:hover{
+		color: #BEAED1;
+	}
+}
+
+@media (min-width: 600px) {
+
+	.grid-container{
+		grid-row-gap: 10px;
+		grid-template:
+		"microhead"				60px
+		"micropaletla"			600px
+		"microtiposla"			500px
+		"microscreensla"		400px
+		"microfooterla"			45px/
+		auto;
+	}
+
+	.microhead{
+		grid-area: microhead;
+		background-color: #483D54;
+	}
+
+	.microhead img{
+		float: left;
+		margin-left: 47%;
+		margin-top: 0.4%;
+		width: 6%;
+	}
+
+	.micropaletla{
+		grid-area: micropaletla;
+		background-color: #F0E0EC;
+	}
+
+	.micropaletla h5{
+	font-weight: bold;
+	margin-top: 6%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	}
+
+	#pal{
+		padding-bottom: 80%;
+		height: 75%;
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	.microtiposla{
+		font-weight: bold;
+		grid-area: microtiposla;
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.8rem;
+		padding-left: 3%;
+		background-color: #F0E0EC;
+		color: black; 
+	}
+
+	.microtiposla h1{
+	font-weight: bold;
+	margin-top: 6%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	padding-right: 2%;
+	}
+
+	.microtiposla h2{
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.2rem;
+		text-align: center;
+		color: #483D54;
+	}
+
+	.microtiposla h3{
+		font-weight: bold;
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 1.2rem;
+		text-align: center;
+		color: #483D54;
+	}
+
+	.microscreensla{
+		grid-area: microscreensla;
+		background-color: #F0E0EC;
+	}
+
+	.microscreensla h4{
+	font-weight: bold;
+	margin-top: 6%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+
+	}
+
+	#galerialand{
+	padding-left: 14%;
+	padding-top: 1%;
+	width: 100%;
+ 	height: 20%;
+ 	align-content: center;
+	}
+
+	.microfooterla{
+	grid-area: microfooterla;
+	color: white;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8em;
+	padding-top: 17px;
+	text-align: center;
+	background-color: #483D54;
+	text-decoration: none;
+	}
+
+	.microfooterla:hover{
+		color: #BEAED1;
+	}
+
+}
+
+@media (min-width: 900px) {
+
+	.grid-container{
+		grid-column-gap: 10px;
+		grid-template:
+		"microhead		microhead		microhead"			80px
+		"micropaletla	microtiposla	microscreensla"		740px
+		"microfooterla	microfooterla	microfooterla"		55px/
+		500px			500px			500px;
+	}
+
+	.microhead{
+		grid-area: microhead;
+		background-color: #483D54;
+	}
+
+	.microhead img{
+		float: left;
+		margin-left: 48%;
+		margin-top: 0.4%;
+		width: 4.5%;
+	}
+
+	.micropaletla{
+		grid-area: micropaletla;
+		background-color: #F0E0EC;
+	}
+
+	.micropaletla h5{
+	font-weight: bold;
+	margin-top: 8%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	
+	}
+
+	#pal{
+		height: 77%;
+		width: 90%;
+		margin-left: 3%;
+	}
+
+
+	.microtiposla{
+		font-weight: bold;
+		grid-area: microtiposla;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		padding-left: 3%;
+		background-color: #F0E0EC;
+		color: black; 
+	}
+
+	.microtiposla h1{
+	font-weight: bold;
+	margin-top: 8%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	padding-right: 2%;
+	}
+
+	.microtiposla h2{
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.4rem;
+		text-align: center;
+		color: #483D54;
+	}
+
+	.microtiposla h3{
+		font-weight: bold;
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 1.4rem;
+		text-align: center;
+		color: #483D54;
+	}
+
+	.microscreensla{
+		grid-area: microscreensla;
+		background-color: #F0E0EC;
+	}
+
+	.microscreensla h4{
+	font-weight: bold;
+	margin-top: 8%;
+	text-align: center;
+	color: #483D54;
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+
+	}
+
+	#galerialand{
+	padding-left: 29%;
+	width: 60%;
+ 	height: 20%;
+ 	align-content: center;
+	}
+
+	.microfooterla{
+	grid-area: microfooterla;
+	color: white;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	padding-top: 19px;
+	text-align: center;
+	background-color: #483D54;
+	text-decoration: none;
+	}
+
+	.microfooterla:hover{
+		color: #BEAED1;
+	}
+}

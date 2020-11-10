@@ -26,7 +26,8 @@ body{
 	"header"
 	"modelos"
 	"formulario"
-	"sitio";
+	"sitio"
+	"footer";
 }
 
 @media (min-width: 300px){
@@ -36,7 +37,7 @@ body{
 		"modelos"		634px
 		"formulario"	490px
 		"sitio"			60px/
-		490px;
+		1fr;
 	}
 
 	.header{
@@ -133,6 +134,7 @@ body{
 	.sitio:hover{
 	color: #BEAED1;
 	}
+
 }
 
 @media (min-width:  600px){
@@ -240,6 +242,7 @@ body{
 	.sitio:hover{
 	color: #BEAED1;
 	}
+
 }
 
 @media (min-width: 900px) {
@@ -346,6 +349,7 @@ body{
 	color: #BEAED1;
 	}
 
+	
 }
 
 
