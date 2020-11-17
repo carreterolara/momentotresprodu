@@ -4,8 +4,9 @@
 	<title>Micrositio Landingpage</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/microland.css">
-	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
 </head>
 <body class="grid-container">
 
@@ -14,12 +15,12 @@
 </header>
 
 <div class="micropaletla">
-	<h5><u>PALETA LANDINGPAGE</u></h5>
+	<h5><u>PALETA</u></h5>
 	<img id="pal" src="img/micropaletala.png">
 </div>
 
 <div class="microtiposla">
-	<h1><u>TIPOGRAFIA LANDINGPAGE</u></h1>
+	<h1><u>TIPOGRAFIA</u></h1>
 	<br>
 	<p>En la landingpage de Meg's Salon se utilizaron dos tipografías</p>
 
@@ -51,23 +52,30 @@
 
 	<h4><u>COMO SE VE</u></h4>
 
-	<article id="galerialand">
-			
-			<a href="img/escritorio.png" data-lightbox="landingpage" data-title="Versión Escritorio">
-				<img src="img/escritorioch.png"></a>
 
-			<a href="img/tablet.png" data-lightbox="landingpage" data-title="Version Tablet">
-				<img src="img/tabletch.png"></a>
+	<div class="wrapper">
 			
-			<a href="img/mobile.png" data-lightbox="landingpage" data-title="Version Mobile">
-				<img src="img/mobilech.png"></a>
+			<a href="img/escritorio.jpg" data-fancybox="gallery" data-caption="Versión Escritorio">
+				<img src="img/escritorioch.jpg" alt="">
+			</a>
 
-		</article>
+			<a href="img/tablet.jpg" data-fancybox="gallery" data-caption="Versión Tablet">
+				<img src="img/tabletch.jpg" alt="">
+			</a>
+			
+			<a href="img/mobile.jpg" data-fancybox="gallery" data-caption="Versión Mobile">
+				<img src="img/mobilech.jpg" alt=""></a>
+
+	</div>
+
 </div>
 
 
 <a class="microfooterla" href="index.html">VOLVER A LA LANDINGPAGE</a>
 
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>	
 
 </body>
 </html>
